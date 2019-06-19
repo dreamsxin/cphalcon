@@ -16,8 +16,8 @@
 #include "kernel/memory.h"
 #include "ext/spl/spl_exceptions.h"
 #include "kernel/exception.h"
-#include "kernel/array.h"
 #include "kernel/object.h"
+#include "kernel/array.h"
 #include "kernel/operators.h"
 
 
@@ -198,7 +198,8 @@ PHP_METHOD(Phalcon_Image_ImageFactory, newInstance) {
 			ZEPHIR_CALL_METHOD(NULL, &_2$$3, "__construct", NULL, 0, &file, &_5$$3, &_6$$3);
 			zephir_check_call_status();
 		}
-		zephir_update_property_array(this_ptr, SL("services"), &name, &_2$$3 TSRMLS_CC);
+		zephir_update_property_array(this_ptr, SL("services"), &name, &_2$$3);
+		ZEPHIR_INIT_NVAR(&_2$$3);
 	}
 	zephir_read_property(&_7, this_ptr, SL("services"), PH_NOISY_CC | PH_READONLY);
 	zephir_array_fetch(&_8, &_7, &name, PH_NOISY | PH_READONLY, "phalcon/Image/ImageFactory.zep", 76 TSRMLS_CC);

@@ -17,6 +17,7 @@
 #include "kernel/exception.h"
 #include "kernel/operators.h"
 #include "kernel/memory.h"
+#include "kernel/object.h"
 #include "kernel/main.h"
 
 
@@ -93,7 +94,7 @@ PHP_METHOD(Phalcon_Text, camelize) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "camelize", &_0, 0, &text, delimiter);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "camelize", &_0, 499, &text, delimiter);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -236,7 +237,7 @@ PHP_METHOD(Phalcon_Text, dynamic) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "dynamic", &_0, 0, &text, &leftDelimiter, &rightDelimiter, &separator);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "dynamic", &_0, 500, &text, &leftDelimiter, &rightDelimiter, &separator);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -281,7 +282,7 @@ PHP_METHOD(Phalcon_Text, endsWith) {
 	} else {
 		ZVAL_BOOL(&_1, 0);
 	}
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "endswith", &_0, 236, &text, &end, &_1);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "endswith", &_0, 248, &text, &end, &_1);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -320,7 +321,7 @@ PHP_METHOD(Phalcon_Text, humanize) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "humanize", &_0, 0, &text);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "humanize", &_0, 501, &text);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -358,7 +359,7 @@ PHP_METHOD(Phalcon_Text, increment) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "increment", &_0, 0, &text, &separator);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "increment", &_0, 502, &text, &separator);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -413,7 +414,7 @@ PHP_METHOD(Phalcon_Text, lower) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "lower", &_0, 0, &text, &encoding);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "lower", &_0, 503, &text, &encoding);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -458,7 +459,7 @@ PHP_METHOD(Phalcon_Text, startsWith) {
 	} else {
 		ZVAL_BOOL(&_1, 0);
 	}
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "startswith", &_0, 235, &text, &start, &_1);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "startswith", &_0, 247, &text, &start, &_1);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -503,7 +504,7 @@ PHP_METHOD(Phalcon_Text, random) {
 
 	ZVAL_LONG(&_1, type);
 	ZVAL_LONG(&_2, length);
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "random", &_0, 0, &_1, &_2);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "random", &_0, 504, &_1, &_2);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -545,7 +546,7 @@ PHP_METHOD(Phalcon_Text, reduceSlashes) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "reduceslashes", &_0, 0, &text);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "reduceslashes", &_0, 505, &text);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -590,7 +591,7 @@ PHP_METHOD(Phalcon_Text, uncamelize) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "uncamelize", &_0, 0, &text, delimiter);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "uncamelize", &_0, 506, &text, delimiter);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -629,7 +630,7 @@ PHP_METHOD(Phalcon_Text, underscore) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "underscore", &_0, 0, &text);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "underscore", &_0, 507, &text);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -684,7 +685,7 @@ PHP_METHOD(Phalcon_Text, upper) {
 	}
 
 
-	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "upper", &_0, 0, &text, &encoding);
+	ZEPHIR_RETURN_CALL_CE_STATIC(phalcon_helper_str_ce, "upper", &_0, 508, &text, &encoding);
 	zephir_check_call_status();
 	RETURN_MM();
 

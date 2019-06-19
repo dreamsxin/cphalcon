@@ -56,7 +56,7 @@ PHP_METHOD(Phalcon_Storage_Serializer_Igbinary, serialize) {
 		RETURN_MM_MEMBER(getThis(), "data");
 	}
 	zephir_read_property(&_2, this_ptr, SL("data"), PH_NOISY_CC | PH_READONLY);
-	ZEPHIR_RETURN_CALL_FUNCTION("igbinary_serialize", NULL, 0, &_2);
+	ZEPHIR_RETURN_CALL_FUNCTION("igbinary_serialize", NULL, 491, &_2);
 	zephir_check_call_status();
 	RETURN_MM();
 
@@ -79,7 +79,7 @@ PHP_METHOD(Phalcon_Storage_Serializer_Igbinary, unserialize) {
 
 
 
-	ZEPHIR_CALL_FUNCTION(&_0, "igbinary_unserialize", NULL, 0, data);
+	ZEPHIR_CALL_FUNCTION(&_0, "igbinary_unserialize", NULL, 492, data);
 	zephir_check_call_status();
 	zephir_update_property_zval(this_ptr, SL("data"), &_0);
 	ZEPHIR_MM_RESTORE();
