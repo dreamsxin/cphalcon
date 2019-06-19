@@ -13,10 +13,6 @@ LCOV_REPORT=${PROJECT_ROOT}/tests/_output/lcov.info
 
 shopt -s nullglob
 
-zephir clean 2>&1
-zephir fullclean 2>&1
-zephir generate 2>&1
-
 if [[ -z ${CC+x} ]]; then
 	echo -e "The CC variable is unset or set to the empty string.\nSkip precompiling headers.\n"
 else

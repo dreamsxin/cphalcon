@@ -80,8 +80,6 @@ install:
   - .ci/install-prereqs.sh
   - tests/_ci/install-re2c.sh
   - travis_retry composer install $DEFAULT_COMPOSER_FLAGS
-  - wget --no-clobber -O $HOME/bin/zephir https://github.com/dreamsxin/zephir/releases/download/${ZEPHIR_VERSION}/zephir.phar
-  - chmod +x $HOME/bin/zephir
 
 before_script:
   - |
