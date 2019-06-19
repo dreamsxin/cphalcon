@@ -16,7 +16,6 @@
 #include "kernel/operators.h"
 #include "kernel/memory.h"
 #include "kernel/array.h"
-#include "kernel/object.h"
 
 
 /**

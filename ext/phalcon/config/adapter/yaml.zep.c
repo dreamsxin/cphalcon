@@ -19,7 +19,6 @@
 #include "kernel/concat.h"
 #include "kernel/file.h"
 #include "ext/spl/spl_exceptions.h"
-#include "kernel/object.h"
 
 
 /**

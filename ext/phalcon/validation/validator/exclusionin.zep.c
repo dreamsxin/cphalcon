@@ -18,7 +18,6 @@
 #include "kernel/exception.h"
 #include "kernel/operators.h"
 #include "kernel/string.h"
-#include "kernel/object.h"
 
 
 /**

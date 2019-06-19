@@ -18,8 +18,8 @@
 #include "kernel/array.h"
 #include "kernel/exception.h"
 #include "ext/spl/spl_exceptions.h"
-#include "kernel/object.h"
 #include "Zend/zend_closures.h"
+#include "kernel/object.h"
 #include "kernel/time.h"
 
 

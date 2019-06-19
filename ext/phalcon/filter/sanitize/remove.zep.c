@@ -14,7 +14,6 @@
 #include "kernel/main.h"
 #include "kernel/string.h"
 #include "kernel/memory.h"
-#include "kernel/object.h"
 
 
 /**

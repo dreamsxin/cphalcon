@@ -17,7 +17,6 @@
 #include "kernel/concat.h"
 #include "kernel/array.h"
 #include "kernel/operators.h"
-#include "kernel/object.h"
 
 
 /**

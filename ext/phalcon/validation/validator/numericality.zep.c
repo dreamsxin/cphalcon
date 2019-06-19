@@ -17,7 +17,6 @@
 #include "kernel/memory.h"
 #include "kernel/string.h"
 #include "kernel/array.h"
-#include "kernel/object.h"
 
 
 /**

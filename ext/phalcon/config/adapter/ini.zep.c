@@ -20,7 +20,6 @@
 #include "kernel/file.h"
 #include "kernel/array.h"
 #include "ext/spl/spl_exceptions.h"
-#include "kernel/object.h"
 #include "kernel/string.h"
 
 
