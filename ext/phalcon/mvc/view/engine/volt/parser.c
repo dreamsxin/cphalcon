@@ -3677,6 +3677,7 @@ int phvolt_internal_parse_view(zval **result, zval *view_code, zval *template_pa
 			case PHVOLT_T_DEFAULT:
 				if (state->switch_level != 0) {
 					phvolt_(phvolt_parser, PHVOLT_DEFAULT, NULL, parser_status);
+					efree(token.value);
 				} else {
 					// TODO: Make this better.
 					// Issue: https://github.com/phalcon/cphalcon/issues/13242
